@@ -24,7 +24,7 @@ class TestAddGroup(unittest.TestCase):
         success = True
         wd = self.wd
         wd.get("http://localhost/addressbook/")
-        wd.find_element('user').click()
+        wd.find_element("user").click()
         wd.find_element("user").clear()
         wd.find_element("user").send_keys("admin")
         wd.find_element("pass").clear()
